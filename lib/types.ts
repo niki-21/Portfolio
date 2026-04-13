@@ -28,6 +28,8 @@ export type Profile = {
   githubUrl: string;
   email: string;
   portraitSrc: string;
+  heroVisualSrc?: string;
+  heroVisualAlt?: string;
   publicNote?: string;
   heroHighlights: string[];
 };
