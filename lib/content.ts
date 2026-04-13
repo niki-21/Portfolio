@@ -32,6 +32,8 @@ export const profile: Profile = {
   githubUrl: "https://github.com/niki-21",
   email: "mailto:nikimiller1221@gmail.com",
   portraitSrc: "/media/nikita-portrait.jpeg",
+  heroVisualSrc: "/media/hero-illustration.jpeg",
+  heroVisualAlt: "Illustrated avatar of Nikita Miller sitting with a laptop",
   publicNote:
     "This site is meant to be read by anyone: collaborators, clinicians, founders, researchers, and people simply curious about the kind of technology I want to build in the world.",
   heroHighlights: [
