@@ -51,13 +51,15 @@ export function Hero({ profile, flagship }: HeroProps) {
 
           <div className="grid gap-5">
             <aside className="card-surface overflow-hidden rounded-[2rem] p-3">
-              <Image
-                src={profile.portraitSrc}
-                alt="Portrait of Nikita Miller"
-                width={439}
-                height={602}
-                className="h-[18rem] w-full rounded-[1.5rem] object-cover object-[center_18%] sm:h-[20rem] lg:h-[18rem]"
-              />
+              <div className="rounded-[1.5rem] bg-[linear-gradient(180deg,rgba(228,239,246,0.9),rgba(244,247,249,0.82))] p-4">
+                <Image
+                  src={profile.heroVisualSrc ?? profile.portraitSrc}
+                  alt={profile.heroVisualAlt ?? "Portrait of Nikita Miller"}
+                  width={750}
+                  height={815}
+                  className="h-[19rem] w-full rounded-[1.25rem] object-contain bg-white sm:h-[21rem] lg:h-[19rem]"
+                />
+              </div>
             </aside>
 
             <aside className="card-surface relative overflow-hidden rounded-[2rem] p-6 sm:p-8">
