@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { PoodleCompanion } from "@/components/poodle-companion";
 import { useCallback, useEffect, useState } from "react";
 import { profile, projects } from "@/lib/content";
 
@@ -43,7 +44,7 @@ export function PortfolioDeck() {
           <div className="card-content">
           <div className="card-topline"><span><i /> {chapter}</span><span>N° 0{index + 1}</span></div>
           {index === 0 && <div className="intro-card-body">
-            <div className="intro-copy"><p className="deck-kicker">ENGINEER. BUILDER. HUMAN FIRST.</p><h1>Complex systems.<br /><span>Clearer lives.</span></h1><p className="deck-description">I’m Nikita. I build machine learning systems that make healthcare safer and everyday decisions simpler.</p><button className="deck-cta" onClick={() => go(1)}>Meet the work <span aria-hidden="true">↗</span></button><div className="intro-tags"><span>Applied machine learning</span><span>Health tech</span><span>Product thinking</span></div></div>
+            <div className="intro-copy"><p className="deck-kicker">ENGINEER. BUILDER. HUMAN FIRST.</p><h1>Complex systems.<br /><span>Clearer lives.</span></h1><p className="deck-description">I’m Nikita. I build machine learning systems and thoughtful products, from distributed learning and robotics to tools that simplify everyday decisions.</p><button className="deck-cta" onClick={() => go(1)}>Meet the work <span aria-hidden="true">↗</span></button><div className="intro-tags"><span>Applied machine learning</span><span>Systems & robotics</span><span>Product thinking</span></div></div>
             <figure className="graduation-photo"><Image src="/media/graduation.jpeg" alt="Nikita in her graduation cap and gown outside the Brendan Iribe Center" width={1800} height={1200} priority /><figcaption>A chapter worth celebrating.</figcaption></figure>
           </div>}
           {index === 1 && <div className="feature-card-body"><div><p className="deck-kicker">CO-FOUNDER · HEALTH TECHNOLOGY</p><h2>Less noise.<br /><span>Better care.</span></h2><p className="deck-description">NRSAA is a wireless monitoring concept that brings patient signals together to help care teams focus on what matters.</p><div className="award-line"><strong>1st place</strong><span>Cre8 at Arab Health</span></div><div className="deck-actions"><a className="deck-cta" href="/case-studies/nrsaa">Explore NRSAA <span>↗</span></a><a className="text-action" href="https://nrsaa.com" target="_blank" rel="noreferrer">Visit website ↗</a></div></div><figure className="project-visual"><Image src="/media/nrsaa-render.png" alt="NRSAA wireless patient monitoring device concept" width={1212} height={908} /><figcaption>THE CONCEPT / WIRELESS PATIENT MONITORING</figcaption></figure></div>}
@@ -61,6 +62,7 @@ export function PortfolioDeck() {
         <div className="horizon-copy"><p className="deck-kicker">THE NEXT CHAPTER</p><h2 id="horizon-heading">A milestone behind me.<br /><span>A horizon ahead.</span></h2><p>From graduation to what comes next: thoughtful technology, meaningful problems, and room to keep learning.</p><a href={profile.email} className="deck-cta">Let’s connect <span aria-hidden="true">↗</span></a></div>
         <figure className="runway-photo"><Image src="/media/runway-sunset.jpeg" alt="Golden sunset over a runway stretching toward the horizon" width={1350} height={1800} /><figcaption>Looking ahead, with intention.</figcaption></figure>
       </section>
+      <PoodleCompanion />
     </main>
   );
 }
