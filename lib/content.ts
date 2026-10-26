@@ -170,6 +170,32 @@ export const projects: ProjectItem[] = [
     featured: true,
   },
   {
+    slug: "physics-aware-brain-mri-motion-correction",
+    title: "Fast and Physics-Aware Brain MRI Motion Correction",
+    dates: "Apr 2026",
+    highlight: "Medical imaging reconstruction report",
+    techStack: [
+      "MRI Motion Correction",
+      "Transformers",
+      "Unrolled Optimization",
+      "k-Space Data Consistency",
+      "Image Reconstruction",
+    ],
+    motivation:
+      "I wanted to work on a medical-imaging problem where learned priors had to stay grounded in physics, not just produce visually plausible outputs.",
+    challenge:
+      "Brain MRI motion artifacts degrade image quality quickly, and pure restoration models can look promising while still drifting away from the underlying acquisition constraints.",
+    solution:
+      "I built the report around an unrolled hybrid transformer reconstruction network that starts from corrupted k-space, reconstructs an initial image, and alternates a learned restoration prior with a hard data-consistency step.",
+    outcomes: [
+      "Reached saved-test SSIM values of 0.992, 0.971, and 0.739 across the evaluated conditions.",
+      "Outperformed the pure transformer variant, the baseline model, and the saved IM-MoCo comparison outputs in the final report analysis.",
+      "Documented forward inference at roughly 31 ms per slice while tying the implementation back to literature review, checkpoint analysis, and reproducible saved experiments.",
+    ],
+    links: {},
+    featured: false,
+  },
+  {
     slug: "cargo-sentinel",
     title: "Cargo Sentinel",
     dates: "2026",
