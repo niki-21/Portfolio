@@ -4,11 +4,11 @@ import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Nikita Miller | ML Engineer Portfolio",
+    default: "Nikita Miller | AI Engineer | End-to-End ML Pipelines",
     template: "%s | Nikita Miller",
   },
   description:
-    "A modern editorial-tech portfolio for Nikita Miller, featuring NRSAA, federated learning, applied ML projects, and live GitHub snapshots.",
+    "Nikita Miller is an AI engineer building end-to-end pipelines and products. Explore AllerNav, distributed learning, MLOps, and applied AI projects.",
 };
 
 export default function RootLayout({

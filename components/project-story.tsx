@@ -1,8 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
-import { PoodleCompanion } from "@/components/poodle-companion";
 
 const stories = {
+  allernav: {
+    category: "AI ENGINEERING / END-TO-END PRODUCT", title: "AllerNav", tagline: "From ingredients to an interactive dining experience.",
+    overview: "An allergy-aware dining prototype built in 10 hours at HackUMD. The project brings ingredient-based detection, rule-based inference, trust-weighted dish ranking, and interactive maps into a Streamlit application.",
+    role: "End-to-end product builder · HackUMD", scope: "Python · Streamlit · Rule-based inference · Folium",
+    problem: "Ingredient information is fragmented, and comparing dishes against personal allergies can take significant effort. The project explores how a connected workflow can make that information easier to review.",
+    approach: [
+      ["Connect the inputs", "Bring dish ingredients and user allergy preferences into the same workflow, then identify ingredient-level allergen signals."],
+      ["Build the inference pipeline", "Use rule-based inference, ingredient scoring, and user trust weighting to rank dishes for review."],
+      ["Deliver an interactive product", "Surface results in Streamlit and visualize locations using Folium maps. The interface connects data processing and inference to a practical user journey."],
+    ],
+    result: "Built the prototype in 10 hours and earned 2nd place in the HackUMD General Track among 30+ teams. AllerNav demonstrates how I connect backend logic, inference, and a usable interface under a tight deadline.",
+    outcomes: ["10-hour end-to-end build", "2nd place · HackUMD General Track", "Ingredient scoring + interactive maps"],
+    links: [{label:"Explore the repository",href:"https://github.com/niki-21/AllergyNav"}], next:"federated-learning-mlops", nextLabel:"Distributed learning for autonomous driving", image:false,
+  },
   nrsaa: {
     category: "VENTURE / HEALTH TECHNOLOGY", title: "NRSAA", tagline: "A clearer signal for care teams.",
     overview: "A wireless patient-monitoring concept that combines multiple vital signs with predictive analysis. The aim: reduce monitoring friction and help clinicians distinguish meaningful alerts from noise.",
@@ -47,6 +60,5 @@ export function ProjectStory({slug}:{slug:keyof typeof stories}) {
     <section id="approach" className="story-section"><p className="deck-kicker">02 / THE APPROACH</p><div><h2>How I approached it.</h2><div className="story-steps">{story.approach.map(([title,body],i)=><article key={title}><span>0{i+1}</span><div><h3>{title}</h3><p>{body}</p></div></article>)}</div></div></section>
     <section id="outcome" className="story-section"><p className="deck-kicker">03 / THE OUTCOME</p><div><h2>What came out of it.</h2><p>{story.result}</p><ul className="story-outcomes">{story.outcomes.map(item=><li key={item}>{item}</li>)}</ul></div></section>
     <footer className="story-next"><p className="deck-kicker">ANOTHER SIDE OF MY WORK</p><Link href={`/case-studies/${story.next}`}>{story.nextLabel} ↗</Link><Link href="/" className="text-action">Return to portfolio</Link></footer>
-    <PoodleCompanion />
   </main>;
 }
