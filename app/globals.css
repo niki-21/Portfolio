@@ -244,3 +244,56 @@ body:has(.project-story)::before {display:none;}
 .additional-research a{font-size:14px;text-decoration:underline;text-underline-offset:4px;}
 @media(max-width:1100px){.publications-card-body{padding:20px 32px 35px;}.publication-entry h3{font-size:22px;}}
 @media(max-width:700px){.publications-card-body{padding:15px 25px 30px;}.publications-heading{display:block;}.publications-heading h2{font-size:42px;letter-spacing:-1.7px;}.publications-heading > p{font-size:17px;max-width:none;margin-top:20px;}.publications-grid{grid-template-columns:1fr;gap:28px;}.publication-entry h3{font-size:23px;}.publication-venue{font-size:11px;line-height:1.7;}.additional-research{flex-direction:column;align-items:start;gap:12px;}.additional-research a{font-size:15px;line-height:1.6;}}
+/* Espresso and copper, drawn from the runway rather than beige or rose. */
+.deck-site,.project-story {
+  --deck-ink:#f7f0e9;
+  --deck-blue:#e6a273;
+  color:#f7f0e9;
+  background:linear-gradient(180deg,#211c19 0%,#30231d 38%,#593b29 70%,#39271e 100%);
+}
+body:has(.deck-site),body:has(.project-story){background:#211c19;}
+.stack-card {background:#302722;border-color:#735644;}
+.stack-card.is-behind {background:#80583c;box-shadow:0 3px 0 #b77d4730;}
+.stack-card.is-front {box-shadow:0 22px 55px #100b0855;}
+.deck-header,.story-nav {border-color:#715849;}
+.header-note,.deck-intro,.deck-footnote,.card-topline,.deck-kicker,.project-visual figcaption,.research-visual figcaption,.background-details > div > span,.publication-venue,.additional-research > span,.story-facts dt,.story-image figcaption {color:#e7bd9a;}
+.pitch-card h1 span,.pitch-card h2 span,.project-index,.project-open,.research-stats strong,.selected-project:hover h3,.allernav-metrics strong,.publication-link,.publication-entry:hover h3,.story-tagline,.story-jumps,.story-steps article > span {color:#efac78;}
+.deck-description,.award-line span,.work-heading > p,.selected-project p,.research-stats span,.background-details p,.publications-heading > p,.publication-entry > p:not(.publication-venue),.allernav-metrics span,.story-section p:not(.deck-kicker){color:#e0cec0;}
+.deck-cta {background:#e6a273;color:#291c15;}
+.deck-cta:hover {background:#f3ba8e;}
+.intro-tags {color:#f1c6a3;}
+.intro-tags span,.project-visual,.research-visual {background:#46372d;}
+/* Product renders retain a light neutral mat for their original white canvas. */
+.project-visual {background:#e4ded8;color:#39271e;}
+.project-visual figcaption {color:#503d31;}
+.chapter-nav button {color:#e5cdb9;}
+.chapter-nav button:hover {background:#513b2e;}
+.chapter-nav button[aria-current],.deck-pagination .next-card {background:#e6a273;color:#291c15;}
+.deck-pagination button {border-color:#937157;}
+.page-total {color:#d0b19b;}
+.selected-project,.publication-entry,.award-line {border-color:#ce8f61;}
+.background-details > div,.additional-research,.story-facts,.story-section {border-color:#755c4b;}
+.card-6.is-front,.story-next {background:#1f1915;color:#f9eee5;}
+.card-6 .card-topline,.contact-card-body .deck-kicker,.contact-card-body .deck-description,.story-next .deck-kicker {color:#e9c3a3;}
+.card-6 .card-topline i,.contact-card-body .deck-cta {background:#e6a273;}
+.contact-card-body h2 span {color:#efac78;}
+.contact-card-body .deck-cta {color:#291c15;}
+.deck-site a:focus-visible,.deck-site button:focus-visible,.project-story a:focus-visible {outline-color:#ffd09f;}
+.horizon-copy {color:#fff2e4;}
+.horizon-copy .deck-kicker {color:#f4c996;}
+.horizon-copy h2 span {color:#f2bc83;}
+.horizon-copy .deck-cta {background:#edb078;color:#322116;}
+.story-image {background:#e4ded8;}
+.story-outcomes li {background:#46352a;border-color:#e6a273;}
+.pipeline-demo {background:#211a16;border-color:#8d6447;color:#fff0df;box-shadow:0 18px 40px #100b0838;}
+.pipeline-demo-top,.pipeline-output > span,.pipeline-demo-bottom button {color:#efb77f;}
+.pipeline-pulse {background:#efb77f;box-shadow:0 0 15px #dc995e;}
+.pipeline-stages button {color:#ecd4bd;border-color:#795b46;}
+.pipeline-stages button span,.pipeline-step,.pipeline-demo-bottom {color:#d9b598;}
+.pipeline-stages button[aria-selected=true]{background:#e6a273;border-color:#e6a273;color:#291c15;}
+.pipeline-stages button[aria-selected=true] span{color:#57351f;}
+.pipeline-flow {background:#6c4d38;}
+.pipeline-flow > span {background:linear-gradient(90deg,#ac6e3d,#efb77f);box-shadow:0 0 12px #edb078;}
+.pipeline-detail > p:not(.pipeline-step){color:#ecd9c6;}
+.pipeline-output,.pipeline-demo-bottom {border-color:#b7855f;}
+@keyframes signal-pulse {50%{opacity:.4;box-shadow:0 0 4px #dc995e;}}
